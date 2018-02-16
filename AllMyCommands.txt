@@ -1,0 +1,25 @@
+git init
+git remote add origin https://github.com/abdelrahman977/SE.git
+git add 1.1.txt
+git add 3.1.txt
+git add 5.1.txt
+git rm 3.1.txt
+git checkout HEAD 3.1.txt
+git commit -m "the first 3 files"
+echo "Project Title :sprint 0" >> README.md
+echo "Getting Started" >> README.md
+echo "Author : Abdelrahman Hossam 37-9077" >> README.md
+echo "Acknowledgments : (book Chacon, Scott, and Ben Straub. Pro Git. Apress,2014." >> README.md
+git branch ReadMe
+git checkout "ReadMe"
+git add README.md
+git commit -m "readme"
+git checkout "master"
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m "final text"
+git push -u origin master
+
+
+
+
